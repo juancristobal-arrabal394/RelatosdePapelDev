@@ -1,12 +1,118 @@
-# React + Vite
+# Relatos de Papel – Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el desarrollo del **front-end en React** para el proyecto transversal _Relatos de Papel_, como parte de la Actividad 1 de la asignatura **Desarrollo Web Full Stack** del máster.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivos de la actividad
 
-## Expanding the ESLint configuration
+- Desarrollar una aplicación front-end con **React**, utilizando componentes funcionales, hooks, enrutamiento y estilos con metodología BEM.
+- Implementar las siguientes vistas:
+  - Landing (con redirección)
+  - Página principal (con listado y búsqueda de libros)
+  - Vista de libro
+  - Carrito visible o desplegable
+  - Checkout (con pago simulado)
+- Aplicar conceptos clave: JSX, hooks (`useState`, `useEffect`, custom hook), rutas con **React Router v6**.
+- Utilizar datos **mock** sin conexión a back-end.
+- Desplegar el proyecto en **Vercel** y preparar una **videomemoria** explicativa.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías utilizadas
+
+- [React 18](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router v6](https://reactrouter.com/en/main)
+- CSS3 + metodología [BEM](http://getbem.com/)
+- JavaScript ES6+
+- Git + GitHub
+- [Vercel](https://vercel.com/) (despliegue)
+
+
+
+---
+
+## Estructura de carpetas
+relatos-de-papel-front/
+
+├── public/
+
+├── src/
+
+│ ├── assets/ # Imágenes y recursos
+
+│ ├── components/
+
+│ │ ├── BookCard/
+
+│ │ ├── Cart/
+
+│ │ ├── Header/
+
+│ │ └── Layout/
+
+│ ├── contexts/ # Context API (opcional)
+
+│ ├── hooks/ # Custom hooks
+
+│ ├── mocks/ # Datos de prueba
+
+│ ├── pages/
+
+│ │ ├── LandingPage/
+
+│ │ ├── HomePage/
+
+│ │ ├── BookDetailsPage/
+
+│ │ └── CheckoutPage/
+
+│ ├── routes/ # Definición de rutas
+
+│ ├── styles/ # Estilos globales
+
+│ ├── App.jsx
+
+│ └── main.jsx
+
+├── README.md
+
+└── package.json
+
+
+
+---
+
+## Colaboración
+
+- **Una rama por funcionalidad.** No trabajar directamente sobre `main`.  
+  Ejemplo: `feature/landing`, `feature/cart`, etc.
+
+---
+
+## Instrucciones para ejecutar el proyecto
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/MagdaOnaindia/relatos-de-papel-front.git
+   
+2. Instalar dependencias:
+
+   ```bash
+   npm install
+   
+3. Ejecutar en desarrollo:
+   ```bash
+   npm run dev
+
+## Entrega final
+Al finalizar, se entregará:
+
+- Carpeta del proyecto SIN node_modules
+
+- Archivo .txt con URL del despliegue en Vercel
+
+- Videomemoria en formato MP4, duración máxima 10 minutos, cubriendo: Componentes y rutas, Hooks usados, Vistas y estilos destacados y Despliegue en Vercel
+
+
