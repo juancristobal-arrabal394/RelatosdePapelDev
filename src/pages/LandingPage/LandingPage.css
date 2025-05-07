@@ -1,0 +1,15 @@
+/* src/pages/LandingPage/LandingPage.css */
+.landing {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.landing__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.landing__description {
+    font-size: 1.2rem;
+    color: #555;
+}
