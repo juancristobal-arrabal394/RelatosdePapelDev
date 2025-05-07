@@ -16,7 +16,8 @@ export default function LandingPage() {
     return (
         <div className="landing">
             <h1 className="landing__title">Bienvenido a Relatos de Papel</h1>
-            <p className="landing__description">Explora y compra libros únicos.</p>
+            <p className="landing__description">Explora y compra libros.</p>
+            {/* podríamos añadir un cargador girando aquí */}
         </div>
     );
 }
