@@ -1,5 +1,11 @@
 // src/App.jsx
 // Componente raíz.
-export default function App() {
-    return <></>;
+import AppRouter from './routes/AppRouter';
+
+function App() {
+    return (
+        <AppRouter />
+    );
 }
+
+export default App;
