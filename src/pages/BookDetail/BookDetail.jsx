@@ -6,7 +6,7 @@ export default function BookDetail() {
   const [libro, setLibro] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/libros/${id}`)
+    fetch(`https://libros-ap-iweb.vercel.app/libros/${id}`)
       .then((res) => res.json())
       .then(setLibro);
   }, [id]);

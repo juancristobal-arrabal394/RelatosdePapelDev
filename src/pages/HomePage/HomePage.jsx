@@ -5,7 +5,7 @@ export default function HomePage() {
   const [libros, setLibros] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/libros")
+    fetch("https://libros-ap-iweb.vercel.app/libros")
       .then((res) => res.json())
       .then((data) => {
         const librosOrdenados = data
