@@ -1,6 +1,6 @@
 import React from 'react';
 import './CartWidget.css';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../../context/CartContext';
 
 const CartWidget = ({ onCartClick }) => {
   const { totalItems } = useCart();
